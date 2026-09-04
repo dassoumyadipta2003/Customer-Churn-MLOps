@@ -525,7 +525,7 @@ Prediction API
 
 **Soumyadipta Das**
 
-MSc Statistics & Data Science — LMU Munich
+MSc Statistics & Data Science @ LMU Munich
 
 [LinkedIn](https://www.linkedin.com/in/soumyadiptadas3)
 
