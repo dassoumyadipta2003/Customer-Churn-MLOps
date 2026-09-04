@@ -1,0 +1,21 @@
+{
+  "family": "customer-churn-api",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "2048",
+  "executionRoleArn": "arn:aws:iam::458781646240:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "customer-churn-api",
+      "image": "458781646240.dkr.ecr.ap-south-1.amazonaws.com/customer-churn-api:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ]
+}

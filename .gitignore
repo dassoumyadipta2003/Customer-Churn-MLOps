@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow
+mlflow.db
+mlruns/
+mlflow_airflow/
+catboost_info/
+
+# Data
+data/raw/*
+data/processed/*
+!data/.gitkeep
+
+
+# Airflow
+airflow/logs/
+airflow/.env
+
+# AWS
+.aws/
+*.pem
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/

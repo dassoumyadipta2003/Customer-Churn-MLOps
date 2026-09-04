@@ -1,0 +1,25 @@
+services:
+  airflow:
+    build:
+      context: ..
+      dockerfile: airflow/Dockerfile
+
+    container_name: customer-churn-airflow
+
+    ports:
+      - "8080:8080"
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ../src:/opt/airflow/project/src
+      - ../data:/opt/airflow/project/data
+      - ../models:/opt/airflow/project/models
+      - ../requirements.txt:/opt/airflow/project/requirements.txt
+      - ../mlflow_airflow:/opt/airflow/mlflow
+      - C:/Users/HP/.aws:/home/airflow/.aws:ro
+
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+
+    command: standalone

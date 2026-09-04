@@ -1,0 +1,24 @@
+artifact_path: file:C:/Users/HP/Desktop/Customer_Churn_MLOps/mlruns/1/models/m-f98f95b033eb44ce8a218a0d76475374/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.14.7
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types:
+    - catboost.core.CatBoostClassifier
+mlflow_version: 3.15.2
+model_id: m-f98f95b033eb44ce8a218a0d76475374
+model_size_bytes: 500174
+model_uuid: m-f98f95b033eb44ce8a218a0d76475374
+prompts: null
+run_id: 70dda7685cd34001a81ed12a469c1b4a
+utc_time_created: '2026-09-01 18:32:20.104174'
